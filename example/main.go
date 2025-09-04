@@ -8,7 +8,6 @@ import (
 
 func main() {
 	fmt.Println("=== Chronus Library Example ===")
-
 	// Example 1: Basic time measurement
 	fmt.Println("\n1. Basic time measurement:")
 	start := chronus.Now()
