@@ -1,5 +1,7 @@
 # Chronus
 
+<img src='icon/thumb.jpg'>
+
 [![Go Version](https://img.shields.io/github/go-mod/go-version/reinanbr/chronus)](https://golang.org/)
 [![License](https://img.shields.io/github/license/reinanbr/chronus)](LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/reinanbr/chronus)](https://goreportcard.com/report/github.com/reinanbr/chronus)
@@ -52,10 +54,10 @@ import (
 
 func main() {
     fmt.Println("Starting...")
-    
+  
     // Sleep for 1000 milliseconds (1 second)
     chronus.Sleep(1000)
-    
+  
     fmt.Println("Finished after 1 second")
 }
 ```
@@ -73,13 +75,13 @@ import (
 func main() {
     start := chronus.Now()
     fmt.Printf("Start time: %d\n", start)
-    
+  
     // Sleep for 2 seconds
     chronus.Sleep(2000)
-    
+  
     end := chronus.Now()
     fmt.Printf("End time: %d\n", end)
-    
+  
     elapsed := end - start
     fmt.Printf("Elapsed time: %d milliseconds\n", elapsed)
 }
@@ -92,6 +94,7 @@ func main() {
 Returns the current time in milliseconds since the Unix epoch (January 1, 1970 UTC).
 
 **Returns:**
+
 - `int64`: Current time in milliseconds
 
 ### `Sleep(duration time.Duration)`
@@ -99,6 +102,7 @@ Returns the current time in milliseconds since the Unix epoch (January 1, 1970 U
 Pauses execution for the specified duration in milliseconds.
 
 **Parameters:**
+
 - `duration time.Duration`: Duration to sleep in milliseconds
 
 ## Examples
@@ -151,13 +155,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 ### v1.0.0
+
 - Initial release
 - Added `Now()` function for getting current time in milliseconds
 - Added `Sleep()` function for millisecond-precision sleeping
 
 ## Documentation
 
-- [🏗️ Architecture & Structure](ARQUITETURA_ESTRUTURA.md) - Detailed explanation of library structure and why each part is necessary
+- [🏗️ Architecture &amp; Structure](ARQUITETURA_ESTRUTURA.md) - Detailed explanation of library structure and why each part is necessary
 - [📚 Publication Guide](GUIA_PUBLICACAO.md) - Complete guide on how to publish a Go library to pkg.go.dev
 - [🎯 Chronus Case Study](CASO_PRATICO_CHRONUS.md) - Practical example of this library's publication process
 
