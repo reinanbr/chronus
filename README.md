@@ -157,6 +157,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Documentation
 
+- [🏗️ Architecture & Structure](ARQUITETURA_ESTRUTURA.md) - Detailed explanation of library structure and why each part is necessary
 - [📚 Publication Guide](GUIA_PUBLICACAO.md) - Complete guide on how to publish a Go library to pkg.go.dev
 - [🎯 Chronus Case Study](CASO_PRATICO_CHRONUS.md) - Practical example of this library's publication process
 

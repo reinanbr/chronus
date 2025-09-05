@@ -92,10 +92,10 @@ func ExampleSleep() {
 // Example demonstrating timing an operation
 func ExampleNow_timing() {
 	start := Now()
-	
+
 	// Simulate some work
 	Sleep(50)
-	
+
 	elapsed := Now() - start
 	// elapsed contains the duration in milliseconds
 	_ = elapsed
