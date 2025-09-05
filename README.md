@@ -155,6 +155,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Added `Now()` function for getting current time in milliseconds
 - Added `Sleep()` function for millisecond-precision sleeping
 
+## Documentation
+
+- [📚 Publication Guide](GUIA_PUBLICACAO.md) - Complete guide on how to publish a Go library to pkg.go.dev
+- [🎯 Chronus Case Study](CASO_PRATICO_CHRONUS.md) - Practical example of this library's publication process
+
 ## Support
 
 If you have any questions or need help, please open an issue on GitHub.
