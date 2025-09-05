@@ -1,6 +1,6 @@
 # Chronus
 
-<img src='icon/thumb.jpg' width=250>
+<img src='icon/thumb.jpg' width=350>
 
 [![Go Version](https://img.shields.io/github/go-mod/go-version/reinanbr/chronus)](https://golang.org/)
 [![License](https://img.shields.io/github/license/reinanbr/chronus)](LICENSE)
