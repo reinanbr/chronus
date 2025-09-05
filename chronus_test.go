@@ -71,13 +71,33 @@ func BenchmarkSleep(b *testing.B) {
 	}
 }
 
-// Example demonstrating the usage of Now function
+// Example demonstrating the usage of Now function for timestamps
 func ExampleNow() {
 	timestamp := Now()
-	_ = timestamp // timestamp contains current time in milliseconds
+	// timestamp contains current time in milliseconds since Unix epoch
+	_ = timestamp
+	// Output:
 }
 
 // Example demonstrating the usage of Sleep function
 func ExampleSleep() {
-	Sleep(1000) // Sleep for 1000 milliseconds (1 second)
+	start := Now()
+	Sleep(100) // Sleep for 100 milliseconds
+	elapsed := Now() - start
+	// elapsed will be approximately 100 milliseconds
+	_ = elapsed
+	// Output:
+}
+
+// Example demonstrating timing an operation
+func ExampleNow_timing() {
+	start := Now()
+	
+	// Simulate some work
+	Sleep(50)
+	
+	elapsed := Now() - start
+	// elapsed contains the duration in milliseconds
+	_ = elapsed
+	// Output:
 }
